@@ -1,0 +1,53 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Pad Thaï",
+        "ingredients": ["nouilles de riz", "crevettes", "œufs", "germes de soja", "cacahuètes", "sauce tamarin"],
+        "steps": [
+          "Cuire les nouilles selon les instructions.",
+          "Faire sauter les crevettes et les œufs.",
+          "Ajouter les nouilles, la sauce tamarin et les légumes.",
+          "Servir avec des cacahuètes concassées."
+        ],
+        "image": "https://example.com/images/padthai.jpg",
+        "category": "plat",
+        "type": "asiatique",
+        "chef": "Chef Anong"
+      },
+      {
+        "id": 2,
+        "name": "Tiramisu",
+        "ingredients": ["mascarpone", "œufs", "café", "biscuits", "cacao"],
+        "steps": [
+          "Séparer les blancs des jaunes.",
+          "Mélanger les jaunes avec le sucre et le mascarpone.",
+          "Monter les blancs en neige.",
+          "Tremper les biscuits dans le café, alterner les couches.",
+          "Saupoudrer de cacao et réfrigérer."
+        ],
+        "image": "https://example.com/images/tiramisu.jpg",
+        "category": "dessert",
+        "type": "italien",
+        "chef": "Chef Marco"
+      }
+    ],
+  
+    "comments": [
+      {
+        "id": 1,
+        "recipeId": 1,
+        "author": "Laura",
+        "text": "Délicieux et facile à faire !",
+        "rating": 5
+      },
+      {
+        "id": 2,
+        "recipeId": 2,
+        "author": "Paul",
+        "text": "Très bon mais un peu trop sucré à mon goût.",
+        "rating": 4
+      }
+    ]
+  }
+  
