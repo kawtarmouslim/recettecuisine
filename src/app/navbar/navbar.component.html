@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <div class="navbar-brand">
+      <a routerLink="/">Recettes</a>
+    </div>
+    <div class="navbar-links">
+        <a routerLink="/home">Acceuil</a>
+      <a routerLink="/recipes" [queryParams]="{category: 'entrees'}">Entrées</a>
+      <a routerLink="/recipes" [queryParams]="{category: 'plats'}">Plats</a>
+      <a routerLink="/recipes" [queryParams]="{category: 'desserts'}">Desserts</a>
+    </div>
+    <div class="navbar-search">
+      <input type="text" placeholder="Rechercher une recette...">
+      <button (click)="searchRecipes()">Rechercher</button>
+    </div>
+  </nav>

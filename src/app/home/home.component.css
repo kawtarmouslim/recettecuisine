@@ -1,0 +1,120 @@
+/* Bannière */
+.banner {
+    position: relative;
+    height: 500px;
+    background-image: url('/assets/image/img1.webp'); /* Nouvelle image */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 24px 48px;
+  }
+  
+  .banner-content h1 {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 400px;
+    line-height: 1.4;
+  }
+  
+  /* Section principale */
+  .main-section {
+    padding: 48px 24px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .main-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 24px;
+  }
+  
+  .main-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
+  }
+  
+  .main-section h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 32px;
+  }
+  
+  /* Catégories */
+  .categories {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .category-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-item p {
+    margin-top: 16px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  /* Responsive design */
+  @media (min-width: 640px) {
+    .categories {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .banner-content {
+      padding: 24px 48px;
+    }
+  
+    .banner-content h1 {
+      font-size: 36px;
+    }
+  
+    .main-section {
+      padding: 48px 48px;
+    }
+  
+    .categories {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
