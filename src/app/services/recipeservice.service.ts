@@ -9,8 +9,8 @@ import { Recip } from '../models/recip';
 export class RecipeserviceService {
       private apiUrl="http://localhost:3000/recipes"
   constructor(private http:HttpClient) { }
-  getRecipes():Observable<Recip> {
-    return this.http.get<Recip>(this.apiUrl);
+  getRecipes():Observable<Recip[]> {
+    return this.http.get<Recip[]>(this.apiUrl);
   }
   getRecidById(id:number):Observable<Recip>{
     return this.http.get<Recip>(`${this.apiUrl}/${id}`);

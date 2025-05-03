@@ -10,7 +10,7 @@
           "Ajouter les nouilles, la sauce tamarin et les légumes.",
           "Servir avec des cacahuètes concassées."
         ],
-        "image": "https://example.com/images/padthai.jpg",
+        "image": "assets/image/img2.jpg",
         "category": "plat",
         "type": "asiatique",
         "chef": "Chef Anong"
@@ -26,8 +26,24 @@
           "Tremper les biscuits dans le café, alterner les couches.",
           "Saupoudrer de cacao et réfrigérer."
         ],
-        "image": "https://example.com/images/tiramisu.jpg",
+        "image": "assets/image/glase.jpg",
         "category": "dessert",
+        "type": "italien",
+        "chef": "Chef Marco"
+      },
+      {
+        "id": 3,
+        "name": "Tiramisu",
+        "ingredients": ["mascarpone", "œufs", "café", "biscuits", "cacao"],
+        "steps": [
+          "Séparer les blancs des jaunes.",
+          "Mélanger les jaunes avec le sucre et le mascarpone.",
+          "Monter les blancs en neige.",
+          "Tremper les biscuits dans le café, alterner les couches.",
+          "Saupoudrer de cacao et réfrigérer."
+        ],
+        "image": "assets/image/img3.jpg",
+        "category": "entree",
         "type": "italien",
         "chef": "Chef Marco"
       }

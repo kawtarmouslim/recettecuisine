@@ -14,24 +14,17 @@
     <p>
       Chez nous, les enfants cuisinent aussi ! Que vous cherchiez une recette rapide ou un plat plus traditionnel, découvrez nos recettes accessibles à tous.
     </p>
-    <!-- Sous-titre -->
+    
     <h3>Nos recettes phares !</h3>
-    <!-- Catégories -->
     <div class="categories">
-      <!-- Entrées -->
-      <div class="category-item">
-        <img src="assets/image/img2.jpg" alt="Entrées">
-        <p>Les entrées</p>
-      </div>
-      <!-- Plats -->
-      <div class="category-item">
-        <img src="assets/image/img3.jpg" alt="Plats">
-        <p>Les plats</p>
-      </div>
-      <!-- Desserts -->
-      <div class="category-item">
-        <img src="assets/images/desrt.jpg" alt="Desserts">
-        <p>Les desserts</p>
+      <!-- Affichage pour chaque catégorie -->
+      <div *ngFor="let category of categories">
+        <h4>{{ category | titlecase }}</h4> <!-- Transforme la première lettre en majuscule -->
+        <div class="category-item" *ngFor="let recipe of getRecipesByCategory(category)">
+          <img [src]="recipe.image" [alt]="recipe.name">
+          <p>{{ recipe.name }}</p>
+        </div>
       </div>
     </div>
+    
   </section>
